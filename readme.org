@@ -1,1 +1,5 @@
 * Celo/BAF Celo for Eth Devs Feedback
+- See [[./celo-feedback.pdf]] for the full report
+
+- The folders helloCelo and helloCeloDeploy contain my experiments with account
+  creation and deploying contracts
