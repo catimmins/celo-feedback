@@ -1,0 +1,378 @@
+{
+  "contractName": "ERC677Receiver",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onTokenTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"onTokenTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/cat/spi/celo/link-token-celo/contracts/token/ERC677Receiver.sol\":\"ERC677Receiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/cat/spi/celo/link-token-celo/contracts/token/ERC677Receiver.sol\":{\"keccak256\":\"0xef4d8f572730a66f32c261d95c4cbc293d0032b32772e36502656061293c0576\",\"urls\":[\"bzz-raw://cfa26b7c682469b6e884deebceb803efdcae07227f3c6eb0ca37ee8a2fd61297\",\"dweb:/ipfs/QmYju4spxJQvpTqqZkjejTK7R2kf2rL9CcFDa7ackn7tft\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.6.0;\n\nabstract contract ERC677Receiver {\n  function onTokenTransfer(address _sender, uint _value, bytes memory _data) public virtual;\n}\n",
+  "sourcePath": "/home/cat/spi/celo/link-token-celo/contracts/token/ERC677Receiver.sol",
+  "ast": {
+    "absolutePath": "/home/cat/spi/celo/link-token-celo/contracts/token/ERC677Receiver.sol",
+    "exportedSymbols": {
+      "ERC677Receiver": [
+        3621
+      ]
+    },
+    "id": 3622,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3611,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3621,
+        "linearizedBaseContracts": [
+          3621
+        ],
+        "name": "ERC677Receiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "functionSelector": "a4c0ed36",
+            "id": 3620,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onTokenTransfer",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 3618,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3613,
+                  "name": "_sender",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3620,
+                  "src": "87:15:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3612,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "87:7:26",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3615,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3620,
+                  "src": "104:11:26",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3614,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:4:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3617,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 3620,
+                  "src": "117:18:26",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 3616,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "117:5:26",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "86:50:26"
+            },
+            "returnParameters": {
+              "id": 3619,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "151:0:26"
+            },
+            "scope": 3621,
+            "src": "62:90:26",
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3622,
+        "src": "25:129:26"
+      }
+    ],
+    "src": "0:155:26"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/cat/spi/celo/link-token-celo/contracts/token/ERC677Receiver.sol",
+      "exportedSymbols": {
+        "ERC677Receiver": [
+          3621
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.6",
+            ".0"
+          ]
+        },
+        "id": 3611,
+        "name": "PragmaDirective",
+        "src": "0:23:26"
+      },
+      {
+        "attributes": {
+          "abstract": true,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            3621
+          ],
+          "name": "ERC677Receiver",
+          "scope": 3622
+        },
+        "children": [
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "functionSelector": "a4c0ed36",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "onTokenTransfer",
+              "overrides": null,
+              "scope": 3621,
+              "stateMutability": "nonpayable",
+              "virtual": true,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_sender",
+                      "overrides": null,
+                      "scope": 3620,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 3612,
+                        "name": "ElementaryTypeName",
+                        "src": "87:7:26"
+                      }
+                    ],
+                    "id": 3613,
+                    "name": "VariableDeclaration",
+                    "src": "87:15:26"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_value",
+                      "overrides": null,
+                      "scope": 3620,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3614,
+                        "name": "ElementaryTypeName",
+                        "src": "104:4:26"
+                      }
+                    ],
+                    "id": 3615,
+                    "name": "VariableDeclaration",
+                    "src": "104:11:26"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_data",
+                      "overrides": null,
+                      "scope": 3620,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 3616,
+                        "name": "ElementaryTypeName",
+                        "src": "117:5:26"
+                      }
+                    ],
+                    "id": 3617,
+                    "name": "VariableDeclaration",
+                    "src": "117:18:26"
+                  }
+                ],
+                "id": 3618,
+                "name": "ParameterList",
+                "src": "86:50:26"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 3619,
+                "name": "ParameterList",
+                "src": "151:0:26"
+              }
+            ],
+            "id": 3620,
+            "name": "FunctionDefinition",
+            "src": "62:90:26"
+          }
+        ],
+        "id": 3621,
+        "name": "ContractDefinition",
+        "src": "25:129:26"
+      }
+    ],
+    "id": 3622,
+    "name": "SourceUnit",
+    "src": "0:155:26"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.0+commit.26b70077.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-01-16T04:18:01.725Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
